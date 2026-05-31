@@ -1,0 +1,192 @@
+/* --- Core Reset & Design Tokens --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5e17eb; /* Consistent dark slate theme */
+    color: #ffffff;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+/* --- Nav Styling --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #fbfcfd;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar nav a {
+    color: #040404;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.navbar nav a:hover, .navbar nav a.active {
+    color: #797878;
+}
+
+/* --- Worker Hero Section --- */
+.worker-hero {
+    text-align: center;
+    padding: 50px 20px 30px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.worker-hero h1 {
+    font-size: 2.3rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.worker-hero p {
+    color: #a0aec0;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+/* --- Benefits Flex Layout --- */
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.benefit-card {
+    background-color: #111a24;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.benefit-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #f39c12;
+}
+
+.benefit-card p {
+    font-size: 0.85rem;
+    color: #a0aec0;
+    line-height: 1.4;
+}
+
+/* --- Mobile-First Single Column Form --- */
+.worker-form-container {
+    background-color: #ffffff;
+    color: #2d3748;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.worker-form-container h2 {
+    font-size: 1.6rem;
+    color: #1a2536;
+    margin-bottom: 6px;
+}
+
+.form-instructions {
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #4a5568;
+}
+
+/* --- Inputs Designed for Touch Screen Taps --- */
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 14px; /* Increased tap targets for mobile thumbs */
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    background-color: #f7fafc;
+    color: #2d3748;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #f39c12;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.15);
+}
+
+/* --- High-Contrast CTA Button --- */
+.register-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #f39c12; /* Safety Amber color */
+    color: #1a2536;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(243, 156, 18, 0.2);
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.register-btn:hover {
+    background-color: #e68a00;
+}
+
+.register-btn:active {
+    transform: scale(0.98); /* Tactile feedback on screen tap */
+}
+
+/* --- Responsive Adaptations for Smaller Screens --- */
+@media (max-width: 650px) {
+    .benefits-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .worker-form-container {
+        padding: 24px;
+        margin: 0 15px;
+    }
+    
+    .worker-hero h1 {
+        font-size: 1.8rem;
+    }
+}

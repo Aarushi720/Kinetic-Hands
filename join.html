@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as a Worker | Kinetic Hands</title>
+    <link rel="icon" type="image/png" href="logo/Black and White Modern Initial K Business Logo copy.png">
+    <link rel="stylesheet" href="worker-style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"> <a class="navbar-brand" href="#"><img src="logo/Black and White Modern Initial K Business Logo copy.png" height="120px" width="120px"></a></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hire.html">Hire Technicians</a>
+            <a href="why-us.html">Why Us</a>
+            <a href="#" class="active">Join as Worker</a>
+        </nav>
+    </header>
+
+    <section class="worker-hero">
+        <h1>Get Regular Daily Wage Work</h1>
+        <p>Register your skill today and connect with trusted companies looking for your expertise. Steady work, guaranteed daily payouts.</p>
+    </section>
+
+    <section class="benefits-container">
+        <div class="benefit-card">
+            <span class="benefit-icon">💰</span>
+            <h3>Daily Payouts</h3>
+            <p>Get your hard-earned money directly at the end of the shift.</p>
+        </div>
+        <div class="benefit-card">
+            <span class="benefit-icon">🛡️</span>
+            <h3>Verified Safe Sites</h3>
+            <p>Work only with licensed companies and contractors.</p>
+        </div>
+        <div class="benefit-card">
+            <span class="benefit-icon">📈</span>
+            <h3>More Gigs</h3>
+            <p>No more sitting around waiting. Choose jobs right from your phone.</p>
+        </div>
+    </section>
+
+    <main class="worker-form-container">
+        <h2>Worker Registration Form</h2>
+        <p class="form-instructions">Fill in your details, and our local team will call you within 24 hours to verify your profile.</p>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Your Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="e.g., Rajesh Kumar" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Mobile Number (WhatsApp Preferred)</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g., +91 98765 43210" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Your Current City / Local Area</label>
+                <input type="text" id="city" name="city" placeholder="e.g., Sector 62, Noida" required>
+            </div>
+
+            <div class="form-group">
+                <label for="skill">Select Your Main Trade / Skill</label>
+                <select id="skill" name="skill" required>
+                    <option value="" disabled selected>What work do you do?</option>
+                    <option value="electrician">⚡ Electrician (Wiring / Repairs)</option>
+                    <option value="laborer">🏗️ General Laborer (Site Help / Loading)</option>
+                    <option value="plumber">🛠️ Plumber</option>
+                    <option value="carpenter">📐 Carpenter</option>
+                    <option value="painter">🎨 Painter</option>
+                    <option value="welder">🔥 Welder</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Years of Experience</label>
+                <select id="experience" name="experience" required>
+                    <option value="" disabled selected>How long have you worked in this trade?</option>
+                    <option value="helper">Helper / Beginner (Less than 1 year)</option>
+                    <option value="1-3">1 to 3 Years</option>
+                    <option value="3-5">3 to 5 Years</option>
+                    <option value="5plus">Master Technician (5+ Years)</option>
+                </select>
+            </div>
+
+            <button type="submit" class="register-btn">Register to Get Jobs</button>
+        </form>
+    </main>
+
+</body>
+</html>

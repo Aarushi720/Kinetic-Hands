@@ -1,0 +1,121 @@
+
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero {
+    height: 100vh;
+    background-color: #5e17eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+  }
+ 
+    .nav-item {
+      --bs-nav-link-padding-x: 0;
+      --bs-nav-link-padding-y: 0.5rem;
+      --bs-nav-link-font-weight: 700;
+      --bs-nav-link-color: rgb(5 4 4);
+      
+  }
+  .nav-link:hover{
+    color: rgb(107, 103, 103);
+    transform: translateY(-2px);
+    animation: ease-in-out;
+  }      
+  .hero .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+  
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .hero-text .btn {
+      margin: 8px;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .hero-text .btn:hover {
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }          
+
+  .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-main {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .btn-light {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  .navbar-brand img{
+    padding: 0;
+    margin: 0;
+
+  }
+  .navbar {
+    background: rgba(255, 255, 255, 0.901) !important;
+    backdrop-filter: blur(8px);
+  }
+  .navbar .navbar-brand {
+    color: #000000 !important;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  /* Custom Additions for Team Project Modules */
+.italic-tagline {
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+/* Custom list layout markers */
+.custom-check-list {
+  padding-left: 0;
+}
+
+.custom-check-list li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.custom-check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #198754; /* Bootstrap Success Green */
+  font-weight: bold;
+}
+
+/* Background subtlety values for modern look */
+.bg-success-subtle {
+  background-color: #e8f5e9 !important;
+}
+
+.bg-success-subtle text-success {
+  color: #1b5e20 !important;
+}

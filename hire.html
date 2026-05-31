@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Technicians | Kinetic Hands</title>
+    <link rel="icon" type="image/png" href="logo/Black and White Modern Initial K Business Logo copy.png">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"> <a class="navbar-brand" href="#"><img src="logo/Black and White Modern Initial K Business Logo copy.png" height="120px" width="120px"></a></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" class="active">Hire Technicians</a>
+            <a href="join.html">Join as Worker</a>
+            <a href="why-us.html">Why Us</a>
+           
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>Get Verified, On-Demand Technicians</h1>
+        <p>Scale your workforce instantly. From short-term daily fixes to long-term commercial projects, we deploy vetted professionals to your site.</p>
+    </section>
+
+    <main class="form-container">
+        <h2>Post a Job Requirement</h2>
+        <p class="form-subtitle">Fill out the details below, and our team will match you with the right professionals within hours.</p>
+        
+        <form action="#" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" placeholder="e.g., Nexus Buildcon" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Person</label>
+                    <input type="text" id="contact" name="contact" placeholder="e.g., John Doe" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="location">Project Location</label>
+                    <input type="text" id="location" name="location" placeholder="e.g., Site Address, City" required>
+                </div>
+                <div class="form-group">
+                    <label for="trade">Required Trade</label>
+                    <select id="trade" name="trade" required>
+                        <option value="" disabled selected>Select a technician type</option>
+                        <option value="electrician">⚡ Electrician Specialists</option>
+                        <option value="laborer">🏗️ General & Heavy Laborers</option>
+                        <option value="plumber">🛠️ Mechanical & Plumbing</option>
+                        <option value="civil">📐 Civil & Finishing (Carpenters/Painters)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="count">Number of Workers Needed</label>
+                    <input type="number" id="count" name="count" min="1" placeholder="e.g., 5" required>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration of Work</label>
+                    <select id="duration" name="duration" required>
+                        <option value="" disabled selected>Select timeline</option>
+                        <option value="single-day">Single Day Shift</option>
+                        <option value="short-term">2 - 5 Days</option>
+                        <option value="mid-term">1 Month+</option>
+                        <option value="ongoing">Ongoing Contract</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Brief Project Description</label>
+                <textarea id="description" name="description" rows="4" placeholder="Describe the scope of work (e.g., 'Need 3 commercial electricians for phase-3 wiring panel installation...')" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Request Workforce Quote</button>
+        </form>
+    </main>
+
+</body>
+</html>
